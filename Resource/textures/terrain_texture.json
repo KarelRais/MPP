@@ -1,0 +1,41 @@
+{ 
+  "resource_pack_name": "custom_block_resource_pack", 
+  "texture_name": "atlas.terrain", 
+  "padding": 8, 
+  "num_mip_levels": 4, 
+  "texture_data": { 
+    "color_red": { 
+      "textures": "textures/blocks/color_red" 
+    },
+    "color_orange": {
+      "textures": "textures/blocks/color_orange"
+    },
+    "color_yellow": {
+      "textures": "textures/blocks/color_yellow"
+    },
+    "color_green": {
+      "textures": "textures/blocks/color_green"
+    },
+    "color_blue": {
+      "textures": "textures/blocks/color_blue"
+    },
+    "color_black": {
+      "textures": "textures/blocks/color_black"
+    },
+    "color_white": {
+      "textures": "textures/blocks/color_white"
+    },
+    "color_gray": {
+      "textures": "textures/blocks/color_gray"
+    },
+    "color_lightgray": {
+      "textures": "textures/blocks/color_lightgray"
+    },
+    "chessboard": {
+      "textures": "textures/blocks/chessboard"
+    },
+    "blue_bricks": {
+      "textures": "textures/blocks/blue_bricks"
+    }
+  } 
+}

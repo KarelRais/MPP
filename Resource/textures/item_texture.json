@@ -1,0 +1,23 @@
+{
+  "resource_pack_name": "custom_item_resource_pack",
+  "texture_data": {
+    "redstone_axe": {
+      "textures": "textures/items/redstone_axe"
+    },
+    "redstone_hoe": {
+      "textures": "textures/items/redstone_hoe"
+    },
+    "redstone_pickaxe": {
+      "textures": "textures/items/redstone_pickaxe"
+    },
+    "redstone_shovel": {
+      "textures": "textures/items/redstone_shovel"
+    },
+    "redstone_spear": {
+      "textures": "textures/items/redstone_spear"
+    },
+    "redstone_sword": {
+      "textures": "textures/items/redstone_sword"
+    }
+  }
+}
