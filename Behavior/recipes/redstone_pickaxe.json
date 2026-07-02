@@ -4,7 +4,9 @@
     "description": {
       "identifier": "mpp:redstone_pickaxe"
     },
-    "group": "crafting_table",
+    "tags": [
+      "crafting_table"
+    ],
     "pattern": [
       "RRR",
       " S ",
