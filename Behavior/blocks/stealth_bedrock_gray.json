@@ -1,0 +1,44 @@
+{ 
+  "format_version": "1.21.80", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "mpp:stealth_bedrock_gray",
+      "menu_category": { "category": "construction" }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 9999 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 3600000 },
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:material_instances": {
+        "north": {
+          "texture": "color_gray"
+        },
+        "south": {
+          "texture": "color_gray"
+        },
+        "east": {
+          "texture": "color_gray"
+        },
+        "west": {
+          "texture": "color_gray"
+        },
+        "up": {
+          "texture": "color_gray"
+        },
+        "down": {
+          "texture": "color_gray"
+        }
+      },
+      "minecraft:item_visual": {
+      "geometry": "minecraft:geometry.full_block",
+      "material_instances": {
+        "*": {
+          "texture": "color_gray",
+          "render_method": "opaque"
+          }
+        }
+      }
+    }
+  }
+}

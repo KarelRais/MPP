@@ -1,0 +1,42 @@
+{ 
+  "format_version": "1.21.80", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "mpp:structure_block_blue",
+      "menu_category": { "category": "construction" }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:material_instances": {
+        "north": {
+          "texture": "color_blue"
+        },
+        "south": {
+          "texture": "color_blue"
+        },
+        "east": {
+          "texture": "color_blue"
+        },
+        "west": {
+          "texture": "color_blue"
+        },
+        "up": {
+          "texture": "color_blue"
+        },
+        "down": {
+          "texture": "color_blue"
+        }
+      },
+      "minecraft:item_visual": {
+      "geometry": "minecraft:geometry.full_block",
+      "material_instances": {
+        "*": {
+          "texture": "color_blue",
+          "render_method": "opaque"
+          }
+        }
+      }
+    }
+  }
+}

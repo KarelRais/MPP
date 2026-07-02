@@ -1,0 +1,73 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mpp:redstone_shovel",
+      "menu_category": { "category": "items" }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Redstone Shovel"
+      },
+      "minecraft:icon": "redstone_shovel",
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "position": [0, 0, 0],
+          "rotation": [0, 0, 0]
+        },
+        "off_hand": {
+          "position": [0, 0, 0],
+          "rotation": [0, 0, 0]
+        }
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.tools"
+      },
+      "minecraft:durability": {
+        "max_durability": 200
+      },
+      "minecraft:attack": {
+        "damage": 4,
+        "speed": 1.5,
+        "on_hit_event": "mpp:prevent_damage_to_blaze"
+      },
+      "minecraft:destroy_speeds": {
+        "block_list": [
+          "minecraft:redstone_block",
+          "minecraft:redstone_ore",
+          "minecraft:deepslate_redstone_ore"
+        ],
+        "speed": 9999
+      }
+    },
+    "events": {
+      "mpp:prevent_damage_to_blaze": {
+        "sequence": [
+          {
+            "condition": {
+              "test": "is_family",
+              "subject": "target",
+              "value": "blaze"
+            },
+            "run_event": {
+              "event": "mpp:heal_blaze",
+              "target": "target"
+            }
+          }
+        ]
+      },
+      "mpp:heal_blaze": {
+        "sequence": [
+          {
+            "apply_effect": {
+              "effect": "minecraft:instant_health",
+              "duration": 1,
+              "amplifier": 10,
+              "target": "self"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

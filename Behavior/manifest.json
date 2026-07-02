@@ -1,0 +1,24 @@
+{
+ "format_version": 2, 
+ "header": { 
+  "description": "This this the M++ Behavior Pack that adds new features. Works with M++ Resource Pack only.", 
+  "name": "M++ Behavior Pack", 
+  "uuid": "d3b2d91e-ce06-48a4-821a-4810bc5e2d3e", 
+  "version": [ 1, 0, 0 ], 
+  "min_engine_version": [1, 21, 80] 
+ }, 
+ "modules": [ 
+  { 
+   "description": "M++ Behavior Pack", 
+   "type": "data", 
+   "uuid": "c364cd4e-d7ae-4d78-9ec2-305012ec9181", 
+   "version": [ 1, 0, 0 ] 
+  } 
+ ], 
+ "dependencies": [ 
+  { 
+   "uuid": "c01ed71d-0002-41de-88ba-479e1819f1de", 
+   "version": [ 1, 0, 0 ] 
+  } 
+ ] 
+}

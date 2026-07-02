@@ -1,0 +1,73 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mpp:redstone_spear",
+      "menu_category": { "category": "items" }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Redstone Spear"
+      },
+      "minecraft:icon": "redstone_spear",
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "position": [0, 0, 0],
+          "rotation": [0, 0, 0]
+        },
+        "off_hand": {
+          "position": [0, 0, 0],
+          "rotation": [0, 0, 0]
+        }
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.tools"
+      },
+      "minecraft:durability": {
+        "max_durability": 250
+      },
+      "minecraft:attack": {
+        "damage": 8,
+        "speed": 1.0,
+        "on_hit_event": "mpp:prevent_damage_to_blaze"
+      },
+      "minecraft:destroy_speeds": {
+        "block_list": [
+          "minecraft:redstone_block",
+          "minecraft:redstone_ore",
+          "minecraft:deepslate_redstone_ore"
+        ],
+        "speed": 9999
+      }
+    },
+    "events": {
+      "mpp:prevent_damage_to_blaze": {
+        "sequence": [
+          {
+            "condition": {
+              "test": "is_family",
+              "subject": "target",
+              "value": "blaze"
+            },
+            "run_event": {
+              "event": "mpp:heal_blaze",
+              "target": "target"
+            }
+          }
+        ]
+      },
+      "mpp:heal_blaze": {
+        "sequence": [
+          {
+            "apply_effect": {
+              "effect": "minecraft:instant_health",
+              "duration": 1,
+              "amplifier": 10,
+              "target": "self"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

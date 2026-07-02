@@ -1,0 +1,44 @@
+{ 
+  "format_version": "1.21.80", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "mpp:stealth_bedrock_blue",
+      "menu_category": { "category": "construction" }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 9999 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 3600000 },
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:material_instances": {
+        "north": {
+          "texture": "color_blue"
+        },
+        "south": {
+          "texture": "color_blue"
+        },
+        "east": {
+          "texture": "color_blue"
+        },
+        "west": {
+          "texture": "color_blue"
+        },
+        "up": {
+          "texture": "color_blue"
+        },
+        "down": {
+          "texture": "color_blue"
+        }
+      },
+      "minecraft:item_visual": {
+      "geometry": "minecraft:geometry.full_block",
+      "material_instances": {
+        "*": {
+          "texture": "color_blue",
+          "render_method": "opaque"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "mpp:blue_bricks",
+      "menu_category": { "category": "construction" }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:loot": "loot_tables/blue_bricks.json",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 10,
+        "item_specific_speeds": [
+          {
+            "item": "minecraft:wooden_pickaxe",
+            "destroy_speed": 1.5
+          },
+          {
+            "item": "minecraft:stone_pickaxe",
+            "destroy_speed": 0.75
+          },
+          {
+            "item": "minecraft:copper_pickaxe",
+            "destroy_speed": 0.6
+          },
+          {
+            "item": "minecraft:iron_pickaxe",
+            "destroy_speed": 0.5
+          },
+          {
+            "item": "minecraft:diamond_pickaxe",
+            "destroy_speed": 0.4
+          },
+          {
+            "item": "minecraft:netherite_pickaxe",
+            "destroy_speed": 0.35
+          },
+          {
+            "item": "minecraft:golden_pickaxe",
+            "destroy_speed": 0.25
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 6 },
+      "minecraft:material_instances": {
+        "north": { "texture": "blue_bricks" },
+        "south": { "texture": "blue_bricks" },
+        "east": { "texture": "blue_bricks" },
+        "west": { "texture": "blue_bricks" },
+        "up": { "texture": "blue_bricks" },
+        "down": { "texture": "blue_bricks" }
+      },
+      "minecraft:item_visual": {
+        "geometry": "minecraft:geometry.full_block",
+        "material_instances": {
+          "*": {
+            "texture": "blue_bricks",
+            "render_method": "opaque"
+          }
+        }
+      }
+    }
+  }
+}

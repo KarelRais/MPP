@@ -1,0 +1,44 @@
+{ 
+  "format_version": "1.21.80", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "mpp:stealth_bedrock_orange",
+      "menu_category": { "category": "construction" }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 9999 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 3600000 },
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:material_instances": {
+        "north": {
+          "texture": "color_orange"
+        },
+        "south": {
+          "texture": "color_orange"
+        },
+        "east": {
+          "texture": "color_orange"
+        },
+        "west": {
+          "texture": "color_orange"
+        },
+        "up": {
+          "texture": "color_orange"
+        },
+        "down": {
+          "texture": "color_orange"
+        }
+      },
+      "minecraft:item_visual": {
+      "geometry": "minecraft:geometry.full_block",
+      "material_instances": {
+        "*": {
+          "texture": "color_orange",
+          "render_method": "opaque"
+          }
+        }
+      }
+    }
+  }
+}
